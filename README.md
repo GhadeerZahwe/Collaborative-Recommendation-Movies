@@ -2,8 +2,9 @@
 
 ## DESCRIPTION:
 ## DESCRIPTION:
-This project implements an **Item-Based Collaborative Filtering** system to recommend movies based on user ratings.  
-It applies **K-Nearest Neighbors (KNN)** with cosine similarity on the given dataset (`movies.csv` and `ratings.csv`) to find movies similar to a given movie.
+This project implements a **Collaborative Movie Recommendation System** using **Item-Based Filtering with KNN**.  
+It processes `movies.csv` and `ratings.csv` into a movie–user matrix, handles sparse data with **CSR matrices**, and uses **cosine similarity** to recommend the top 10 movies similar to any given title.
+
 
 ## DATASET COLUMNS:
 - **userId**: Unique ID for each user
