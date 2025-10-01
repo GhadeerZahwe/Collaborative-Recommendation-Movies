@@ -1,8 +1,9 @@
 # PROJECT: Collaborative Movie Recommendation using KNN
 
 ## DESCRIPTION:
-This project implements an **Item-Based Collaborative Filtering** system to recommend movies based on user ratings. 
-It uses K-Nearest Neighbors (KNN) on the MovieLens dataset to find movies similar to a given movie based on past user ratings.
+## DESCRIPTION:
+This project implements an **Item-Based Collaborative Filtering** system to recommend movies based on user ratings.  
+It applies **K-Nearest Neighbors (KNN)** with cosine similarity on the given dataset (`movies.csv` and `ratings.csv`) to find movies similar to a given movie.
 
 ## DATASET COLUMNS:
 - **userId**: Unique ID for each user
@@ -12,10 +13,10 @@ It uses K-Nearest Neighbors (KNN) on the MovieLens dataset to find movies simila
 - **genres**: Movie genres (not used in this filtering approach)
 
 ## STEPS:
-1. Import dataset and inspect columns
-2. Transform ratings dataset to a **movie-user matrix**:
-   - Movies as rows, users as columns
-   - Fill missing ratings with 0
+1. Import datasets (`movies.csv` and `ratings.csv`) and inspect columns.  
+2. Transform the ratings into a **movie-user matrix**:
+   - Rows = movies, Columns = users  
+   - Missing ratings are filled with `0`  
 3. Reduce noise by filtering:
    - Keep movies rated by **at least 10 users**
    - Keep users who rated **at least 50 movies**
